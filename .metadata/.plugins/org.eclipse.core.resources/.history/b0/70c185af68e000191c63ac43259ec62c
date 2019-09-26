@@ -1,0 +1,45 @@
+package javaRevision;
+
+public class CharRemovalQ {
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		CharRemovalQ charRemovalQ = new CharRemovalQ();
+		charRemovalQ.removeChar();
+		charRemovalQ.removeChar1();
+		charRemovalQ.removeChar2();
+	}
+	
+	public void removeChar() {
+	 String animal = "kitten";
+	 int n = 3;
+		
+		String sub = animal.substring(n, ++n);
+		//char charA = animal.charAt(n);
+		//System.out.println(animal.replace(sub, ""));
+		System.out.println(animal.replaceFirst(sub, "")); //replaces the first instance of the letter only
+		
+	}
+	
+	//splits the String animal in to elements in the array animalName based on the  
+	public void removeChar1() {
+		String animal = "kitten";
+		 int n = 3;
+		 
+		 String[] animalName = animal.split(animal.substring(n));
+		 for (String part: animalName) {
+			 System.out.println(part);
+		 }
+		 
+		 
+	}
+	
+	public void removeChar2() {
+		 String animal = "kitten";
+		 int n = 3;
+		 
+		 String newString = animal.substring(0, n) + animal.substring(++n);
+		 System.out.println(newString);	 
+	}
+
+}

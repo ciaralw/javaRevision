@@ -1,0 +1,52 @@
+package javaRevision;
+
+public class CharRemovalQ {
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		CharRemovalQ charRemovalQ = new CharRemovalQ();
+		//charRemovalQ.removeChar();
+		//charRemovalQ.removeChar1();
+		charRemovalQ.removeChar2();
+	}
+	
+	//finds the substring located at the index position specified in the int n, replaces the first instance of this with nothing
+	//Issue: removes the first instance only so will not work if you want to target another instance of that letter
+	//Issue: removes all instances of the character, not just the one you are targeting
+	public void removeChar() {
+	 String animal = "kitten";
+	 int n = 3;
+		
+		String sub = animal.substring(n, ++n);
+		//char charA = animal.charAt(n);
+		//System.out.println(animal.replace(sub, ""));
+		System.out.println(animal.replaceFirst(sub, "")); //replaces the first instance of the letter only
+		
+	}
+	
+	//splits the String animal in to elements in the array animalName based on the char at the index position specified in the int n
+	//Issue: removes both values, splits it out by every 't' character
+	public void removeChar1() {
+		String animal = "kitten";
+		 int n = 2;
+		 
+		 String[] animalName = animal.split(animal.substring(n, ++n));
+		 for (String part: animalName) {
+			 System.out.println(part);
+		 }
+		 
+		 
+	}
+	
+	//creates a new String newAnimal
+	//sets this equal to the substring of animal from index 0 to the index position specified in the int n 
+	// + the substring of animal from the position of 1 after the index specified in the int n
+	public void removeChar2() {
+		 String animal = "kitten";
+		 int n = 3;
+		 
+		 String newAnimal = animal.substring(0, n) + animal.substring(++n);
+		 System.out.println(newAnimal);	 
+	}
+
+}

@@ -1,0 +1,15 @@
+package javaRevision;
+
+public class TeenNumberQ {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	public boolean hasTeen(int age1, int age2, int age3) {
+		boolean teen;
+		if()
+	}
+
+}

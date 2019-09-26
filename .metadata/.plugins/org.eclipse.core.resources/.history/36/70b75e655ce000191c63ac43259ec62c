@@ -1,0 +1,79 @@
+package javaRevision;
+
+public class StringExamples {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		StringExamples stringExamples = new StringExamples();
+		//stringExamples.firstCharacter();
+		//stringExamples.startCharacter();
+		//stringExamples.endCharacter();
+		//stringExamples.subCharacter();
+		//stringExamples.containsString();
+		stringExamples.indexString();
+	}
+
+	public void firstCharacter() {
+		String name = "Bob Bobson";
+		String x = "sealed";
+		String y = "seal";
+		System.out.println(name.charAt(4));
+		System.out.println(name.contains("bob")); //case sensitive
+		System.out.println(name.indexOf("B", 1));
+		System.out.println("Compare to: " + x.compareTo(y)); //prints 2 as the first 4 chars are the same, it then gives the count of additional chars (the first string compared x has 2 additional chars)
+		System.out.println("Compare to: " + y.compareTo(x)); //prints -2 as the first 4 chars are the same, it then gives the count of additional chars (the first string compared y has 2 chars less)
+	}
+	
+	public void startCharacter() {
+		String name = "Bob Bobson";
+		boolean startsWith = name.startsWith("B"); //case sensitive - can use for starting char or chars/substring
+		if(startsWith) {
+			System.out.println("It starts with the char specified");
+		}
+		else {
+			System.out.println("It doesn't start with the char specified");
+		}
+	}
+	
+	public void endCharacter() {
+		String name = "Bob Bobson";
+		boolean endsWith = name.endsWith("son"); //case sensitive - can use for starting char or chars/substring
+		if(endsWith) {
+			System.out.println("It ends with the substring specified");
+		}
+		else {
+			System.out.println("It doesn't end with the substring specified");
+		}
+	}
+	
+	public void subCharacter() {
+		String name = "Bob Bobson";
+		String subCharacter = name.substring(4, 7); //specify the index it starts at, specify the index 1 after the last char you want to return
+		System.out.println(subCharacter);
+	}
+	
+	public void containsString() {
+		String name = "Bob Bobson";
+		boolean contains = name.contains("so");
+		if(contains) {
+			System.out.println("It contains");
+		}
+		else {
+			System.out.println("It doesn't contain");
+		}
+	}
+	
+	public void indexString() {
+		String name = "Bob Bobson";
+		int index = name.indexOf('o');
+		System.out.println("Index of: " + index);
+		
+	}
+	
+	public void splitString() {
+		String name = "Bob Bobson";
+		name.split(" ");
+		System.out.println(name.split(" ")));
+		
+	}
+}

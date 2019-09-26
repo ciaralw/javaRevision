@@ -1,0 +1,22 @@
+package javaRevision;
+
+public class weekendVacationQ {
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+			
+			System.out.println(sleepIn(true, true));	
+	}
+	
+	public boolean didWeSleepIn(boolean weekday, boolean vacation) {
+		boolean sleepIn;
+		if(!weekday || vacation) {
+			sleepIn = true;
+		}
+		else {
+			sleepIn = false;
+		}
+		return sleepIn;
+	}
+
+}

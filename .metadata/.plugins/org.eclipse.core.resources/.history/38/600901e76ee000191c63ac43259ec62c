@@ -1,0 +1,21 @@
+package javaRevision;
+
+public class StartStringQ {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		StartStringQ startStringQ = new StartStringQ();
+		System.out.println(startStringQ.stringBegin("Hi there Bob"));
+	}
+
+	public boolean stringBegin(String sentence) {
+		boolean startsWith = sentence.startsWith("Hi");
+		return startsWith;	
+	}
+	
+	public void stringBegin1() {
+		
+	}
+}
+
+//given a string return true if a string starts with hi

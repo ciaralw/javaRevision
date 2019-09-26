@@ -1,0 +1,42 @@
+package javaRevision;
+
+public class CharRemovalQ {
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		CharRemovalQ charRemovalQ = new CharRemovalQ();
+		//charRemovalQ.removeChar();
+		charRemovalQ.removeChar1();
+	}
+	
+	public void removeChar() {
+	 String animal = "kitten";
+	 int n = 2;
+		
+		String sub = animal.substring(n, ++n);
+		//char charA = animal.charAt(n);
+		//System.out.println(animal.replace(sub, ""));
+		System.out.println(animal.replaceFirst(sub, "")); //replaces the first instance of the letter only
+		
+	}
+	
+	public void removeChar1() {
+		String animal = "kitten";
+		 int n = 1;
+		 
+		 String[] strings = animal.split(animal.substring(n, ++n));
+		 for (String part: strings) {
+			 System.out.println(part);
+		 }
+		 
+		 
+	}
+	
+//	String name = "Bob B Bobson";
+//	String[] strings = name.split(" "); //splits the name in to multiple strings, split based on spaces - stored in an array called strings
+//	System.out.println(strings.length + "\n"); //get the number of elements in the array aka the number of strings got when the name is split based on spaces
+//	for (String word: strings) {
+//		System.out.println(word);
+//	}
+
+}

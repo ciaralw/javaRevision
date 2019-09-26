@@ -1,0 +1,13 @@
+package javaRevision;
+
+public class StartStringQ {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public 
+}
+
+//given a string return true if a string starts with hi
